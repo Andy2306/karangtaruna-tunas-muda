@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-bg {
+    @apply bg-[url('https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png')] bg-opacity-5;
+}
+
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-80;
     backdrop-filter: blur(5px);
