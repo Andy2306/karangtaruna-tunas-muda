@@ -6,9 +6,67 @@
     <link rel="stylesheet" href="./source/style.css" />
     <title>Document</title>
   </head>
-  <body class="bg-gradient-to-b from-blue-100 to-blue-500 lg:ml-36 md:ml-16">
+  <body class="items-center">
+    <!--bagian Navbar start-->
+    <header class="absolute py-3 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg">LOGO</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="navbutton"
+              name="navbutton"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="nav-button transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="nav-button transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="nav-button transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none font-bold"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-bold text-black py-2 mx-8 flex group-hover:text-blue-700"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-bold text-black py-2 mx-8 flex group-hover:text-blue-700"
+                    >Tentang</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#gallery"
+                    class="text-bold text-black py-2 mx-8 flex group-hover:text-blue-700"
+                    >GALLERY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!--bagian Home start-->
-    <section id="home" class="pt-36 h-screen">
+    <section id="home" class="bg-blue-700 pt-36 h-screen">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -46,7 +104,7 @@
     </section>
     <!--bagian Home end-->
     <!--bagian About start-->
-    <section id="about" class="pt-36 top-0 py-5 h-screen">
+    <section id="about" class="pt-36 top-0 py-5 ">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center text-center">
@@ -88,7 +146,41 @@
     <!--bagian About end-->
     <!--bagian Gallery start-->
     <section id="gallery" class="pt-36 top-0 py-5 h-screen">
-      <div class="container"></div>
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center text-center">
+            <h1 class="font-bold uppercase mb-10 text-4xl">GALLERY</h1>
+          </div>
+          <div class="ml-auto mr-auto max-w-[500px]">
+            <img
+              class="slideG w-full hidden"
+              src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png"
+              alt=""
+            />
+            <img
+              class="slideG w-full"
+              src="https://cdn.pixabay.com/photo/2024/01/25/12/30/forest-8531787_1280.jpg"
+              alt=""
+            />
+            <img
+              class="slideG w-full hidden"
+              src="https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg"
+              alt=""
+            />
+            <div class="p-2 mt-4 mb-4">
+              <div class="float-left w-4/12">
+                <img class="demo opacity-60 hover:opacity-100 w-full cursor-pointer" onclick="currentDiv(1)" src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png" alt="">
+              </div>
+              <div class="float-left w-4/12">
+                <img class="demo opacity-60 hover:opacity-100 w-full cursor-pointer" onclick="currentDiv(2)" src="https://cdn.pixabay.com/photo/2024/01/25/12/30/forest-8531787_1280.jpg" alt="">
+              </div>
+              <div class="float-left w-4/12">
+                <img class="demo opacity-60 hover:opacity-100 w-full cursor-pointer" onclick="currentDiv(3)" src="https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--bagian Gallery end-->
   </body>
