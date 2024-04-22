@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="./source/style.css" />
     <title>Document</title>
   </head>
-  <body class="items-center">
+  <body class="items-center bg-slate-900">
     <!--bagian Navbar start-->
-    <header class="absolute py-3 z-10 flex w-full items-center bg-transparent">
+    <header
+      class="absolute py-3 z-10 flex w-full items-center bg-transparent text-white"
+    >
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
@@ -36,25 +38,25 @@
               id="nav-menu"
               class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none font-bold"
             >
-              <ul class="block lg:flex">
+              <ul class="block text-black lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-bold text-black py-2 mx-8 flex group-hover:text-blue-700"
+                    class="text-bold py-2 mx-8 flex group-hover:text-blue-700"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-bold text-black py-2 mx-8 flex group-hover:text-blue-700"
+                    class="text-bold py-2 mx-8 flex group-hover:text-blue-700"
                     >Tentang</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#gallery"
-                    class="text-bold text-black py-2 mx-8 flex group-hover:text-blue-700"
+                    class="text-bold py-2 mx-8 flex group-hover:text-blue-700"
                     >GALLERY</a
                   >
                 </li>
@@ -67,12 +69,13 @@
 
     <!--bagian Home start-->
     <section id="home" class="pt-36 h-screen">
-      <div class="container ">
+      <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="font-semibold md:text-xl">
+            <h1 class="font-semibold text-slate-300 md:text-xl">
               Lorem ipsum dolor
-              <span class="uppercase mt-1 block text-4xl font-bold lg:text-5xl "
+              <span
+                class="text-white uppercase mt-1 block text-4xl font-bold lg:text-5xl"
                 >sit amet.</span
               >
             </h1>
@@ -84,17 +87,17 @@
           </div>
           <div class="ml-auto mr-auto max-w-[500px]">
             <img
-              class="slide w-full"
+              class="slide object-cover h-64 w-full"
               src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png"
               alt=""
             />
             <img
-              class="slide w-full"
+              class="slide object-cover h-64 w-full"
               src="https://cdn.pixabay.com/photo/2024/01/25/12/30/forest-8531787_1280.jpg"
               alt=""
             />
             <img
-              class="slide w-full"
+              class="slide object-cover h-64 w-full"
               src="https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg"
               alt=""
             />
@@ -104,11 +107,16 @@
     </section>
     <!--bagian Home end-->
     <!--bagian About start-->
-    <section id="about" class=" pt-36 top-0 py-5 bg-gradient-to-b from-blue-800 to bg-slate-800">
+    <section
+      id="about"
+      class="pt-36 top-0 py-5 bg-gradient-to-b from-slate-900 to-blue-700"
+    >
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center text-center">
-            <h1 class="text-4xl block mt-1 mb-8 font-bold uppercase">
+            <h1
+              class="text-4xl block mt-1 mb-8 font-bold uppercase text-slate-300"
+            >
               Lorem, ipsum dolor.
             </h1>
             <p class="font-medium mb-20 leading-relaxed text-slate-400">
@@ -119,7 +127,9 @@
             </p>
           </div>
           <div class="w-full self-center text-center">
-            <h1 class="text-4xl block mt-1 mb-8 font-bold uppercase">
+            <h1
+              class="text-4xl block mt-1 mb-8 font-bold uppercase text-slate-300"
+            >
               Lorem, ipsum dolor.
             </h1>
             <p class="font-medium mb-20 leading-relaxed text-slate-400">
@@ -130,7 +140,9 @@
             </p>
           </div>
           <div class="w-full self-center text-center">
-            <h1 class="text-4xl block mt-1 mb-8 font-bold uppercase">
+            <h1
+              class="text-4xl block mt-1 mb-8 font-bold uppercase text-slate-300"
+            >
               Lorem, ipsum dolor.
             </h1>
             <p class="font-medium mb-20 leading-relaxed text-slate-400">
@@ -145,44 +157,102 @@
     </section>
     <!--bagian About end-->
     <!--bagian Gallery start-->
-    <section id="gallery" class="pt-36 top-0 py-5 h-screen bg-gradient-to-t from-blue-800 to bg-slate-800">
+    <section
+      id="gallery"
+      class="pt-36 top-0 py-5 h-auto bg-gradient-to-b from-blue-700 to bg-slate-900"
+    >
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center text-center">
-            <h1 class="font-bold uppercase mb-10 text-4xl">GALLERY</h1>
-          </div>
-          <div class="ml-auto mr-auto max-w-[500px]">
-            <img
-              class="slideG w-full hidden"
-              src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png"
-              alt=""
-            />
-            <img
-              class="slideG w-full"
-              src="https://cdn.pixabay.com/photo/2024/01/25/12/30/forest-8531787_1280.jpg"
-              alt=""
-            />
-            <img
-              class="slideG w-full hidden"
-              src="https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg"
-              alt=""
-            />
-            <div class="p-2 mt-4 mb-4">
-              <div class="float-left w-4/12">
-                <img class="demo opacity-60 hover:opacity-100 w-full cursor-pointer" onclick="currentDiv(1)" src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png" alt="">
-              </div>
-              <div class="float-left w-4/12">
-                <img class="demo opacity-60 hover:opacity-100 w-full cursor-pointer" onclick="currentDiv(2)" src="https://cdn.pixabay.com/photo/2024/01/25/12/30/forest-8531787_1280.jpg" alt="">
-              </div>
-              <div class="float-left w-4/12">
-                <img class="demo opacity-60 hover:opacity-100 w-full cursor-pointer" onclick="currentDiv(3)" src="https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg" alt="">
-              </div>
+            <h1 class="font-bold uppercase mb-10 text-4xl text-slate-300">
+              GALLERY
+            </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <img
+                class="p-4 object-cover h-64 w-full"
+                src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png"
+                alt=""
+              />
+              <img
+                class="p-4 object-cover h-64 w-full"
+                src="https://cdn.pixabay.com/photo/2024/01/25/12/30/forest-8531787_1280.jpg"
+                alt=""
+              />
+              <img
+                class="p-4 object-cover h-64 w-full"
+                src="https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg"
+                alt=""
+              />
+              <img
+                class="p-4 object-cover h-64 w-full"
+                src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png"
+                alt=""
+              />
+              <img
+                class="p-4 object-cover h-64 w-full"
+                src="https://cdn.pixabay.com/photo/2024/01/25/12/30/forest-8531787_1280.jpg"
+                alt=""
+              />
+              <img
+                class="p-4 object-cover h-64 w-full"
+                src="https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
     <!--bagian Gallery end-->
+    <!--bagian Footer start-->
+    <footer class="bg-slate-900 pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 md:w-1/2">
+            <h2 class="font-bold text-4xl">NAMA</h2>
+            <p>mailtome@mail.com (optional)</p>
+            <p>
+              Jl. Kapten Mulyadi No.17, Manggung, Cangakan, Kec. Karanganyar,
+              Kabupaten Karanganyar, Jawa Tengah 57716
+            </p>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="mb-3 inline-block text-base hover:text-blue-700"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-3 inline-block text-base hover:text-blue-700"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="mb-3 inline-block text-base hover:text-blue-700"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="text-slate-400 text-center underline">
+            <a target="_blank" href="https://opensource.org/license/mit"
+              >License</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--bagian Footer end-->
   </body>
   <script src="./source/script.js"></script>
 </html>
