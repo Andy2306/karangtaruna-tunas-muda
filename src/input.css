@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.box {
+    @apply w-full h-full relative left-[-100%];
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+      left: 0;
+    }
+  }
+
 .row {
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
